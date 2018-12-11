@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 public class TestApp {
@@ -17,10 +16,10 @@ public class TestApp {
 		
 		em.getTransaction().begin();
 		@SuppressWarnings("unchecked")
-		List<BookEntity> Students = em.createQuery("from BookEntity").getResultList();
-		for (Iterator<BookEntity> iterator = Students.iterator(); iterator.hasNext();) {
-			BookEntity bookEntity = (BookEntity) iterator.next();
-	        System.out.println(bookEntity.getDescription());
+		List<BookEntity> books = em.createQuery("SELECT a FROM BookEntity a").getResultList();
+		for (Iterator<BookEntity> iterator = books.iterator(); iterator.hasNext();) {
+			BookEntity book = (BookEntity) iterator.next();
+	        System.out.println(book.getDescription());
 	      }
 		em.getTransaction().commit();
 

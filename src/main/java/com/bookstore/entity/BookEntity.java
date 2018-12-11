@@ -17,7 +17,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name="book")
+@Table(name="book", schema="store_1")
 public class BookEntity implements Serializable {
 
 	private static final long serialVersionUID = -852570522431222746L;
