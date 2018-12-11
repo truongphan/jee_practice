@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 public class TestApp {
@@ -20,7 +19,7 @@ public class TestApp {
 		List<BookEntity> Students = em.createQuery("from BookEntity").getResultList();
 		for (Iterator<BookEntity> iterator = Students.iterator(); iterator.hasNext();) {
 			BookEntity bookEntity = (BookEntity) iterator.next();
-	        System.out.println(bookEntity.getDescription());
+	        System.out.println(bookEntity);
 	      }
 		em.getTransaction().commit();
 
