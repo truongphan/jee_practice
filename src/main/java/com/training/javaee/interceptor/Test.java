@@ -1,4 +1,4 @@
-package com.training.interceptor;
+package com.training.javaee.interceptor;
 
 import javax.enterprise.context.spi.CreationalContext;
 import javax.enterprise.inject.spi.Bean;

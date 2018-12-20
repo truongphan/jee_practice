@@ -7,6 +7,8 @@
     <persistence-unit name="jee_practice" transaction-type="RESOURCE_LOCAL">
     	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>com.bookstore.entity.BookEntity</class>
+		<class>com.training.javaee.jpa.entity.BaseEntity</class>
+		<class>com.training.javaee.jpa.entity.CustomerEntity</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/training" /> <!-- BD Mane -->
