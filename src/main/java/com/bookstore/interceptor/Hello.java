@@ -1,4 +1,4 @@
-package com.training.javaee.interceptor;
+package com.bookstore.interceptor;
 
 import javax.inject.Named;
 

@@ -1,4 +1,4 @@
-package com.training.javaee.interceptor;
+package com.bookstore.interceptor;
 
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;

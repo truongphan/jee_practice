@@ -1,4 +1,4 @@
-package com.training.javaee.interceptor;
+package com.bookstore.interceptor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

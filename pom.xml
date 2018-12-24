@@ -13,6 +13,7 @@
 		<version.maven.war.plugin>2.6</version.maven.war.plugin>
 		<version.javaee-api>7.0</version.javaee-api>
 		<version.javaee-api-validation>1.0.0.GA</version.javaee-api-validation>
+		<mokito.test.version>1.10.19</mokito.test.version>
 	</properties>
 
 	<dependencies>
@@ -84,23 +85,20 @@
 			<scope>provided</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/org.eclipse.persistence.jpa -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>org.eclipse.persistence.jpa</artifactId>
 			<version>2.7.3</version>
-		</dependency> -->
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
-		 <dependency>
+		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>6.0.13.Final</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate -->
-		<!-- <dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate</artifactId>
-			<version>3.2.6.ga</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate</artifactId> 
+			<version>3.2.6.ga</version> </dependency> -->
 		<!-- https://mvnrepository.com/artifact/javax.enterprise/cdi-api- interceptor -->
 		<dependency>
 			<groupId>javax.enterprise</groupId>
@@ -113,6 +111,20 @@
 			<artifactId>weld-se</artifactId>
 			<version>2.4.3.Final</version>
 		</dependency>
+		<!-- mockito include BeanCopier -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>${mokito.test.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>jee_practice</finalName>
