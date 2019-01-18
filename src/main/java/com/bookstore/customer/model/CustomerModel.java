@@ -16,6 +16,9 @@ import lombok.Setter;
 public class CustomerModel implements Serializable{
 	private static final long serialVersionUID = 8740206300292196731L;
 	private Long id;
-	private String name;
+	private String firstName;
+	private String lastName;
+	private String email;
 	private String address;
+	private String uuid;
 }

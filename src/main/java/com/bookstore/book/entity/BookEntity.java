@@ -14,9 +14,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name="book", schema="store_1")
+@Table(name="book", schema="store1")
 public class BookEntity extends BaseEntity {
-
 	private static final long serialVersionUID = -852570522431222746L;
 	
 	@NotNull
@@ -29,13 +28,13 @@ public class BookEntity extends BaseEntity {
 	@Size(min=10, max=2000)
 	@Column(name = "description")
 	private String description;
-	
+
 	@Column(name = "isbn")
 	private String isbn;
-	
+
 	@Column(name = "nbOfPage")
 	private Integer nbOfPage;
-	
+
 	@Column(name = "illustrations")
 	private Boolean illustrations;
 }

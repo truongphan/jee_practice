@@ -1,19 +1,28 @@
--- SCHEMA: store-1
-
--- DROP SCHEMA "store-1" ;
-
-CREATE SCHEMA "store-1"
-    AUTHORIZATION postgres;
-	
-set schema 'public';
-create table book (
+create table store1.book (
         id  bigserial not null,
+        create_by varchar(100),
+        create_date timestamp,
+        update_by varchar(100),
+        update_date timestamp,
         description varchar(255),
         illustrations boolean,
         isbn varchar(255),
         nbOfPage int4,
         price float4,
         title varchar(255),
+        primary key (id)
+    );
+
+create table store1.customer (
+        id  bigserial not null,
+        create_by varchar(100),
+        create_date timestamp,
+        update_by varchar(100),
+        update_date timestamp,
+        address varchar(255),
+        age int4,
+        name varchar(255),
+        uuid varchar(255),
         primary key (id)
     );
 
